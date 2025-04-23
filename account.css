@@ -1,0 +1,6 @@
+#board {
+    width: 30%;
+    height: 80vh;
+    margin: auto;
+    background: var(--Secondary);
+}
