@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Permanent+Marker&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     margin: auto;
     color: var(--Text-Color);
     background: var(--Primary-Color);
-    font-family: "LXGW WenKai TC", cursive;
+    font-family: "Noto Serif TC", serif;
 }
 
 #title {

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="global_dark.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="account.css">
-    <title>No 3 BASE 登入帳號</title>
+    <title>No 3 BASE 註冊帳號</title>
 </head>
 
 <body>
@@ -22,11 +22,15 @@
             </label>
             <label for="">
                 <p>密碼</p>
-                <input class="accountTextField" type="password" readonly>
+                <input class="accountTextField" type="password" required>
             </label>
-            <p class="accountAlertText">還沒有帳號嗎？<a href="signup.html">註冊帳號</a></p>
+            <label for="">
+                <p>確認密碼</p>
+                <input class="accountTextField" type="password" required>
+            </label>
+            <p class="accountAlertText">已經有帳號嗎？<a href="login.html">登入帳號</a></p>
         </form>
-        <button class="accountButton" type="button">登入</button>
+        <button class="accountButton" type="button">註冊</button>
     </div>
 
 </body>

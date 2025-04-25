@@ -1,0 +1,98 @@
+#toolBar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    background: var(--Secondary-Color);
+}
+
+#title {
+    width: 250px;
+    font-size: 42px;
+    padding-inline: 20px;
+}
+
+#externalLink {
+    width: 270px;
+}
+
+#externalLink a {
+    font-size: 1rem;
+    font-family: "Noto Serif TC", serif;
+    color: var(--Contrast-Color);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#searchField {
+    width: calc(100vw - 1000px);
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background: var(--Contrast-Color);
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#searchField input {
+    width: calc(100vw - 1070px);
+    height: 30px;
+    border: none;
+    margin-left: 1px;
+    font-size: 1.03rem;
+    letter-spacing: 1px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    background: var(--Input-Background);
+    color: var(--Contrast-Color);
+    font-family: "Tinos", "Noto Serif TC", serif;
+}
+
+#searchField input:focus {
+    outline: none;
+}
+
+#searchField button {
+    width: 60px;
+    text-align: center;
+    font-size: 1.03rem;
+    color: var(--Button-Text-Color);
+    font-family: "Noto Serif TC", serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#tool {
+    width: 190px;
+}
+
+#tool button {
+    width: 40px;
+    height: 40px;
+    background: cadetblue;
+    border: none;
+    outline: none;
+    margin-inline: 10px;
+}
+
+#profile {
+    width: 160px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#profile a {
+    width: 100px;
+    height: 100%;
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Button-Text-Color);
+    background: var(--Contrast-Color);
+}
