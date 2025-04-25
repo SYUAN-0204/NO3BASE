@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Permanent+Marker&display=swap');
+
 body {
     margin: auto;
-    background: var(--Primary);
+    color: var(--Text-Color);
+    background: var(--Primary-Color);
+    font-family: "LXGW WenKai TC", cursive;
+}
+
+#title {
+    color: var(--Contrast-Color);
+    font-family: "Permanent Marker", cursive;
 }

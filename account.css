@@ -1,6 +1,51 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #board {
-    width: 30%;
+    width: 500px;
     height: 80vh;
-    margin: auto;
-    background: var(--Secondary);
+    background: var(--Secondary-Color);
+    border-radius: 10px;
+    box-shadow: 0 4 12 rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-size: 60px;
+}
+
+label {
+    display: block;
+    background: none;
+}
+
+input.accountTextField {
+    width: 360px;
+    height: 30px;
+    background: var(--Input-Background);
+    border: 1px solid var(--Contrast-Color);
+    border-radius: 10px;
+    color: var(--Text-Color);
+}
+
+input.accountTextField:focus {
+    outline: none;
+}
+
+button.accountButton {
+    width: 300px;
+    height: 36px;
+    margin-top: 20px;
+    margin-inline: 30px;
+    box-shadow: none;
+    border: none;
+    border-radius: 12px;
+    color: var(--Button-Text-Color);
+    background: var(--Contrast-Color);
 }

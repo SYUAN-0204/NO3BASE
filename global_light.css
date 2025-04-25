@@ -1,8 +1,10 @@
 :root {
-    --Primary: #F1C9DA;
-    --Secondary: #B56387;
-    --Accent: #8D3136;
-    --Sub-Accent: #EBA9CD;
-    --Contrast: #3D5272;
-    --Text: #4C4B6A;
+    --Primary-Color: #FDF7E7;
+    --Secondary-Color: #F1C9DA;
+    --Accent-Color: #8D3136;
+    --Sub-Accent-Color: #EBA9CD;
+    --Contrast-Color: #3D5272;
+    --Text-Color: #4C4B6A;
+    --Input-Background: #FDF7E7;
+    --Button-Text-Color: #FDF7E7;
 }
