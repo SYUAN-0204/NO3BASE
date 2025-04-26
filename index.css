@@ -1,0 +1,56 @@
+#advertise {
+    width: 900px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+}
+
+#popularSections {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    background: var(--Accent-Color);
+    padding-bottom: 10px;
+}
+
+p.subTitle {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#popularSections div.allSections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+div.section {
+    display: flex;
+    align-items: center;
+}
+
+img.sectionImg {
+    width: 40px;
+    height: 40px;
+    margin-inline: 10px;
+    margin-block: 5px;
+    background: bisque;
+}
+
+a.sectionA {
+    text-decoration: none;
+}
+
+#allSections {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: darkolivegreen;
+}
+
+#allSections div.allSections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
