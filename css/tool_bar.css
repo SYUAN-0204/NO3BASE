@@ -71,16 +71,16 @@
     display: flex;
 }
 
-div.tool {
+a.message {
     width: 40px;
-    height: 40px;
+    height: 50px;
+    position: relative;
     border: none;
     outline: none;
     margin-inline: 5px;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #tool button {
@@ -92,26 +92,27 @@ div.tool {
     margin-inline: 5px;
 }
 
+a.message img.toolImg {
+    height: 20px;
+    margin: 0;
+    margin-top: 10px;
+}
+
 div.messageExpand {
     width: 260px;
     height: 320px;
     display: none;
     position: absolute;
     top: 100%;
-    right: 75px;
+    right: -210px;
     z-index: 10;
     margin-top: -5px;
     background: var(--Secondary-Color);
     border-radius: 5px;
 }
 
-a.message:hover+div.messageExpand {
+a.message:hover div.messageExpand {
     display: block;
-}
-
-img.toolImg {
-    height: 20px;
-    margin: 0;
 }
 
 #loginA {

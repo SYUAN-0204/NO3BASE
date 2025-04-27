@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     else {
         const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
         if (prefersDark) {
-            themeLink.href = "global_dark.css"
+            themeLink.href = "css/global_dark.css"
         }
         else {
-            themeLink.href = "global_light.css"
+            themeLink.href = "css/global_light.css"
         }
     }
 })
@@ -23,15 +23,16 @@ document.addEventListener("toolBarLoaded", function () {
     const noticeImg = document.getElementById("noticeImg")
 
     if (themeLink.href.includes("light")) {
-        themeButtonIcon.src = "Img/Tool_3D5272/moon.png"
-        messageImg.src = "Img/Tool_3D5272/message.png"
-        noticeImg.src = "Img/Tool_3D5272/notice.png"
+        themeButtonIcon.src = "assets/images/Tool_3D5272/moon.png"
+        themeButtonIcon.style.height = "20px"
+        messageImg.src = "assets/images/Tool_3D5272/message.png"
+        noticeImg.src = "assets/images/Tool_3D5272/notice.png"
     }
     else {
-        themeButtonIcon.src = "Img/Tool_B56387/sun.png"
+        themeButtonIcon.src = "assets/images/Tool_B56387/sun.png"
         themeButtonIcon.style.height = "24px"
-        messageImg.src = "Img/Tool_B56387/message.png"
-        noticeImg.src = "Img/Tool_B56387/notice.png"
+        messageImg.src = "assets/images/Tool_B56387/message.png"
+        noticeImg.src = "assets/images/Tool_B56387/notice.png"
     }
 })
 
@@ -42,18 +43,19 @@ function toggleTheme() {
     const noticeImg = document.getElementById("noticeImg")
 
     if (themeLink.href.includes("light")) {
-        themeLink.href = "global_dark.css"
-        localStorage.setItem("theme", "global_dark.css")
-        themeButtonIcon.src = "Img/Tool_B56387/sun.png"
+        themeLink.href = "css/global_dark.css"
+        localStorage.setItem("theme", "css/global_dark.css")
+        themeButtonIcon.src = "assets/images/Tool_B56387/sun.png"
         themeButtonIcon.style.height = "24px"
-        messageImg.src = "Img/Tool_B56387/message.png"
-        noticeImg.src = "Img/Tool_B56387/notice.png"
+        messageImg.src = "assets/images/Tool_B56387/message.png"
+        noticeImg.src = "assets/images/Tool_B56387/notice.png"
     }
     else {
-        themeLink.href = "global_light.css"
-        localStorage.setItem("theme", "global_light.css")
-        themeButtonIcon.src = "Img/Tool_3D5272/moon.png"
-        messageImg.src = "Img/Tool_3D5272/message.png"
-        noticeImg.src = "Img/Tool_3D5272/notice.png"
+        themeLink.href = "css/global_light.css"
+        localStorage.setItem("theme", "css/global_light.css")
+        themeButtonIcon.src = "assets/images/Tool_3D5272/moon.png"
+        themeButtonIcon.style.height = "20px"
+        messageImg.src = "assets/images/Tool_3D5272/message.png"
+        noticeImg.src = "assets/images/Tool_3D5272/notice.png"
     }
 }

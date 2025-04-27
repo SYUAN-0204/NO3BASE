@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="tool_bar.css">
+<link rel="stylesheet" href="css/tool_bar.css">
 
 <div id="toolBar">
     <a id="title" href="index.html" style="text-decoration: none;">NO 3 BASE</a>
@@ -14,27 +14,21 @@
         <button type="button">搜尋</button>
     </div>
     <div id="tool">
-        <div class="tool">
-            <a class="message" type="button">
-                <img id="messageImg" class="toolImg">
-            </a>
-        </div>
-        <div id="messageExpand" class="messageExpand">
-            <p>總之是一些功能</p>
-        </div>
-        <div class="tool">
-            <a class="message" type="button">
-                <img id="noticeImg" class="toolImg">
-            </a>
-        </div>
-        <div id="noticeExpand" class="messageExpand">
-            <p>總之是一些功能</p>
-        </div>
-        <div class="tool">
-            <button id="toggleButton" type="button" onclick="toggleTheme()">
-                <img id="themeImg" class="toolImg">
-            </button>
-        </div>
+        <a class="message" type="button">
+            <img id="messageImg" class="toolImg">
+            <div id="messageExpand" class="messageExpand">
+                <p>總之是一些功能</p>
+            </div>
+        </a>
+        <a class="message" type="button">
+            <img id="noticeImg" class="toolImg">
+            <div id="noticeExpand" class="messageExpand">
+                <p>總之是一些功能</p>
+            </div>
+        </a>
+        <button id="toggleButton" type="button" onclick="toggleTheme()">
+            <img id="themeImg" class="toolImg">
+        </button>
     </div>
     <div id="profile">
         <img src="" alt="">
