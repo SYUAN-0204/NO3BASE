@@ -10,13 +10,15 @@
     width: 900px;
     margin: auto;
     margin-top: 20px;
-    background: var(--Accent-Color);
+    background: var(--Secondary-Color);
     padding-bottom: 10px;
+    border-radius: 10px;
 }
 
 p.subTitle {
     padding-top: 10px;
     padding-left: 10px;
+    font-size: 1.2rem;
 }
 
 #popularSections div.allSections {
@@ -40,6 +42,7 @@ img.sectionImg {
 
 a.sectionA {
     text-decoration: none;
+    color: var(--Section-Text-Color);
 }
 
 #allSections {
@@ -47,10 +50,51 @@ a.sectionA {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background: darkolivegreen;
+}
+
+#subTitleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchSections {
+    width: 200px;
+    height: 26px;
+    background: var(--Contrast-Color);
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#searchSections input {
+    width: 150px;
+    height: 20px;
+    border: none;
+    margin-left: 1px;
+    letter-spacing: 1px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: var(--Contrast-Color);
+    font-family: "Tinos", "Noto Serif TC", serif;
+    background: var(--Input-Background);
+}
+
+#searchSections input:focus {
+    outline: none;
+}
+
+#searchSections button {
+    width: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--Button-Text-Color);
+    font-family: "Noto Serif TC", serif;
 }
 
 #allSections div.allSections {
+    clear: both;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }

@@ -1,5 +1,6 @@
 :root {
     --Primary-Color: #03213D;
+    --RE-Primary-Color: #032445;
     --Secondary-Color: #304575;
     --Accent-Color: #247EA8;
     --Sub-Accent-Color: #106A94;
@@ -7,4 +8,6 @@
     --Text-Color: #FDF7E7;
     --Input-Background: #FDF7E7;
     --Button-Text-Color: #FDF7E7;
+    --Section-Text-Color: #B56387;
+    --Shadow-Color: rgba(48, 69, 117, 0.6);
 }
