@@ -66,21 +66,33 @@
 }
 
 #tool {
-    width: 170px;
+    width: 150px;
     height: 40px;
+    display: flex;
+}
+
+div.tool {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin-inline: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #tool button {
     width: 40px;
     height: 40px;
-    background: cadetblue;
+    background: none;
     border: none;
     outline: none;
     margin-inline: 5px;
-    position: relative;
 }
 
-#messageExpand {
+div.messageExpand {
     width: 260px;
     height: 320px;
     display: none;
@@ -93,8 +105,13 @@
     border-radius: 5px;
 }
 
-button.message:hover+#messageExpand {
+a.message:hover+div.messageExpand {
     display: block;
+}
+
+img.toolImg {
+    height: 20px;
+    margin: 0;
 }
 
 #loginA {
@@ -102,6 +119,7 @@ button.message:hover+#messageExpand {
     height: 36px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 10px;
 }
 
@@ -118,7 +136,7 @@ button.message:hover+#messageExpand {
 }
 
 #profile {
-    width: 160px;
+    width: 180px;
     height: 60px;
     display: flex;
     align-items: center;

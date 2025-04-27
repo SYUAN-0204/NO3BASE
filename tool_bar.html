@@ -14,24 +14,36 @@
         <button type="button">搜尋</button>
     </div>
     <div id="tool">
-        <button class="message" type="button">訊息</button>
-        <div id="messageExpand">
+        <div class="tool">
+            <a class="message" type="button">
+                <img id="messageImg" class="toolImg">
+            </a>
+        </div>
+        <div id="messageExpand" class="messageExpand">
             <p>總之是一些功能</p>
         </div>
-        <button class="message" type="button">通知</button>
-        <div id="messageExpand">
+        <div class="tool">
+            <a class="message" type="button">
+                <img id="noticeImg" class="toolImg">
+            </a>
+        </div>
+        <div id="noticeExpand" class="messageExpand">
             <p>總之是一些功能</p>
         </div>
-        <button type="button">夜間</button>
+        <div class="tool">
+            <button id="toggleButton" type="button" onclick="toggleTheme()">
+                <img id="themeImg" class="toolImg">
+            </button>
+        </div>
     </div>
     <div id="profile">
         <img src="" alt="">
-        <p id="name">神秘的論壇用戶</p>
+        <p id="name">一名神秘論壇用戶</p>
         <div id="profileExpand">
             <div id="playerAccount">
                 <img src="" alt="">
                 <div id="playerAccountText">
-                    <p>神秘的論壇用戶</p>
+                    <p>一名神秘論壇用戶</p>
                     <p>進入基地 <span>180</span> 天</p>
                 </div>
             </div>
