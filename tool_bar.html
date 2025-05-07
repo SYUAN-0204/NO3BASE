@@ -14,18 +14,26 @@
         <button type="button">搜尋</button>
     </div>
     <div id="tool">
-        <a class="message" type="button">
-            <img id="messageImg" class="toolImg">
+        <div class="message">
+            <a href=""><img id="messageImg" class="toolImg"></a>
             <div id="messageExpand" class="messageExpand">
-                <p>總之是一些功能</p>
+                <div class="messageExpandButton">
+                    <button type="button">全部已讀</button>
+                    <button type="button">全部刪除</button>
+                </div>
+                <div class="messageContainer">
+                    <div class="perMessage">
+                        <img src="" alt="">
+                    </div>
+                </div>
             </div>
-        </a>
-        <a class="message" type="button">
-            <img id="noticeImg" class="toolImg">
+        </div>
+        <div class="message" href="">
+            <a href=""><img id="noticeImg" class="toolImg"></a>
             <div id="noticeExpand" class="messageExpand">
                 <p>總之是一些功能</p>
             </div>
-        </a>
+        </div>
         <button id="toggleButton" type="button" onclick="toggleTheme()">
             <img id="themeImg" class="toolImg">
         </button>
