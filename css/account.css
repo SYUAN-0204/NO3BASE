@@ -31,8 +31,6 @@ input.accountTextField {
     height: 30px;
     font-size: 16px;
     font-family: "Tinos", serif;
-    letter-spacing: 1px;
-    padding-inline: 10px;
     background: var(--Input-Background);
     border: 1px solid var(--Contrast-Color);
     border-radius: 10px;

@@ -1,14 +1,10 @@
 #advertise {
-    width: 900px;
     height: 300px;
-    margin: auto;
     margin-top: 20px;
     background: white;
 }
 
 #popularSections {
-    width: 900px;
-    margin: auto;
     margin-top: 20px;
     background: var(--Secondary-Color);
     padding-bottom: 10px;
@@ -41,13 +37,10 @@ img.sectionImg {
 }
 
 a.sectionA {
-    text-decoration: none;
     color: var(--Section-Text-Color);
 }
 
 #allSections {
-    width: 900px;
-    margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -68,20 +61,15 @@ a.sectionA {
 }
 
 #searchSections input {
-    width: 150px;
+    width: 136px;
     height: 20px;
     border: none;
     margin-left: 1px;
-    letter-spacing: 1px;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
     color: var(--Contrast-Color);
     font-family: "Tinos", "Noto Serif TC", serif;
     background: var(--Input-Background);
-}
-
-#searchSections input:focus {
-    outline: none;
 }
 
 #searchSections button {

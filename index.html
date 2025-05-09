@@ -14,62 +14,64 @@
 
 <body>
     <div id="toolBar"></div>
-    <div id="advertise">
-        <img src="" alt="">
-    </div>
-    <div id="popularSections">
-        <p class="subTitle">熱門板塊</p>
-        <div id="popular" class="allSections"></div>
-        <script>
-            const allPopularSections = document.getElementById("popular")
-
-            for (let i = 1; i <= 12; i++) {
-                const section = document.createElement("div")
-                section.className = "section"
-
-                const img = document.createElement("img")
-                img.className = "sectionImg"
-
-                const a = document.createElement("a")
-                a.innerText = "遊戲名稱"
-                a.className = "sectionA"
-                a.href = ""
-
-                section.appendChild(img)
-                section.append(a)
-                allPopularSections.appendChild(section)
-            }
-        </script>
-    </div>
-    <div id="allSections">
-        <div id="subTitleBar">
-            <p class="subTitle">板塊列表</p>
-            <div id="searchSections">
-                <input id="searchSectionsField" type="text" placeholder="搜尋板塊">
-                <button id="searchSectionButton" type="button">搜尋</button>
-            </div>
+    <div id="content">
+        <div id="advertise">
+            <img src="" alt="">
         </div>
-        <div id="all" class="allSections"></div>
-        <script>
-            const allSections = document.getElementById("all")
+        <div id="popularSections">
+            <p class="subTitle">熱門板塊</p>
+            <div id="popular" class="allSections"></div>
+            <script>
+                const allPopularSections = document.getElementById("popular")
 
-            for (let i = 1; i <= 13; i++) {
-                const section = document.createElement("div")
-                section.className = "section"
+                for (let i = 1; i <= 12; i++) {
+                    const section = document.createElement("div")
+                    section.className = "section"
 
-                const img = document.createElement("img")
-                img.className = "sectionImg"
+                    const img = document.createElement("img")
+                    img.className = "sectionImg"
 
-                const a = document.createElement("a")
-                a.innerText = "遊戲名稱"
-                a.className = "sectionA"
-                a.href = ""
+                    const a = document.createElement("a")
+                    a.innerText = "遊戲名稱"
+                    a.className = "sectionA"
+                    a.href = ""
 
-                section.appendChild(img)
-                section.append(a)
-                allSections.appendChild(section)
-            }
-        </script>
+                    section.appendChild(img)
+                    section.append(a)
+                    allPopularSections.appendChild(section)
+                }
+            </script>
+        </div>
+        <div id="allSections">
+            <div id="subTitleBar">
+                <p class="subTitle">板塊列表</p>
+                <div id="searchSections">
+                    <input id="searchSectionsField" type="text" placeholder="搜尋板塊">
+                    <button id="searchSectionButton" type="button">搜尋</button>
+                </div>
+            </div>
+            <div id="all" class="allSections"></div>
+            <script>
+                const allSections = document.getElementById("all")
+
+                for (let i = 1; i <= 13; i++) {
+                    const section = document.createElement("div")
+                    section.className = "section"
+
+                    const img = document.createElement("img")
+                    img.className = "sectionImg"
+
+                    const a = document.createElement("a")
+                    a.innerText = "遊戲名稱"
+                    a.className = "sectionA"
+                    a.href = ""
+
+                    section.appendChild(img)
+                    section.append(a)
+                    allSections.appendChild(section)
+                }
+            </script>
+        </div>
     </div>
 </body>
 

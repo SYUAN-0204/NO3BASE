@@ -5,6 +5,7 @@
     position: sticky;
     top: 0;
     background: var(--Primary-Color);
+    z-index: 20;
 }
 
 #title {
@@ -21,7 +22,6 @@
     font-size: 1rem;
     font-family: "Noto Serif TC", serif;
     color: var(--Contrast-Color);
-    text-decoration: none;
     margin-right: 20px;
 }
 
@@ -37,7 +37,7 @@
 }
 
 #searchField input {
-    width: calc(100vw - 1070px);
+    width: calc(100vw - 1080px);
     height: 30px;
     border: none;
     margin-left: 1px;
@@ -48,10 +48,6 @@
     background: var(--Input-Background);
     color: var(--Contrast-Color);
     font-family: "Tinos", "Noto Serif TC", serif;
-}
-
-#searchField input:focus {
-    outline: none;
 }
 
 #searchField button {
@@ -105,7 +101,7 @@ div.messageExpand {
     right: -210px;
     z-index: 10;
     margin-top: -5px;
-    background: var(--Primary-Color);
+    background: var(--RE-Primary-Color);
     border-radius: 5px;
     box-shadow: 0 2px 8px var(--Shadow-Color);
 }
@@ -143,7 +139,6 @@ div.messageContainer {
 }
 
 div.messageContainer a {
-    text-decoration: none;
     color: var(--Text-Color);
 }
 
@@ -244,7 +239,6 @@ div.perNoticeDetail p:nth-of-type(2) {
     width: 100px;
     height: 100%;
     border-radius: 12px;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,6 +259,8 @@ div.perNoticeDetail p:nth-of-type(2) {
 #profile img {
     width: 36px;
     height: 36px;
+    object-fit: cover;
+    overflow: hidden;
     border-radius: 18px;
     margin-right: 5px;
 }
@@ -383,7 +379,6 @@ div.perNoticeDetail p:nth-of-type(2) {
 
 #playerData a {
     text-align: center;
-    text-decoration: none;
     color: var(--Text-Color);
     font-family: "Noto Serif TC", serif;
 }
@@ -414,7 +409,6 @@ p.title {
     height: 36px;
     line-height: 36px;
     font-size: 0.85rem;
-    text-decoration: none;
     text-align: center;
     font-family: "Noto Serif TC", serif;
     color: var(--Text-Color);
