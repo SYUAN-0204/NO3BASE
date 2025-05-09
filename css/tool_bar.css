@@ -115,21 +115,117 @@ div.message:hover div.messageExpand {
 }
 
 div.messageExpand div.messageExpandButton {
+    height: 30px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 10px;
+}
+
+div.messageExpandButton p {
+    width: 120px;
+    font-size: 0.8rem;
 }
 
 div.messageExpandButton button {
-    margin-top: 3px;
     font-size: 0.75rem;
     font-family: "Noto Serif TC", serif;
     color: var(--Contrast-Color);
     border: none;
     outline: none;
     background: none;
+    cursor: pointer;
 }
 
-div.perMessage img {}
+div.messageContainer {
+    height: 290px;
+    overflow-y: scroll;
+}
+
+div.messageContainer a {
+    text-decoration: none;
+    color: var(--Text-Color);
+}
+
+div.perMessage {
+    height: 48px;
+    margin-inline: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.perMessage img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+div.perMessageDetail {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 5px;
+}
+
+div.perMessageDetail p:nth-of-type(1) {
+    width: 194px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-block: 0;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.perMessageDetail p:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 0.55rem;
+}
+
+div.perMessageDetail p:nth-of-type(2) {
+    max-width: 194px;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-block: 0;
+    margin-top: 2px;
+    /*font-weight: bold;*/
+}
+
+div.perNoticeDetail {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+div.perNoticeDetail p:nth-of-type(1) {
+    width: 250px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-block: 0;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.perNoticeDetail p:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 0.55rem;
+}
+
+div.perNoticeDetail p:nth-of-type(2) {
+    max-width: 250px;
+    font-size: 0.65rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-block: 0;
+    margin-top: 2px;
+    /*font-weight: bold;*/
+}
 
 #toggleButton {
     cursor: pointer;

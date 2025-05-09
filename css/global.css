@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Noto+Serif+TC:wght@200..900&family=Permanent+Marker&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*隱藏滾軸工具*/
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.line {
+    height: 1px;
+    background: var(--Secondary-Color);
+}
+
 body {
     margin: auto;
     color: var(--Text-Color);
