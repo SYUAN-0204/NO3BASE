@@ -96,6 +96,7 @@
 
 #sectionAnnouncementTitle {
     font-size: 1.2rem;
+    font-weight: 500;
     margin: 0;
     margin-top: 20px;
 }
@@ -125,11 +126,13 @@ div.announcement {
 
 p.announcementTitle {
     font-size: 0.85rem;
+    font-weight: 500;
     margin: 0;
 }
 
 p.announcementContent {
     font-size: 0.7rem;
+    font-weight: 300;
     line-height: 1.2rem;
     margin: 0;
 }
@@ -141,4 +144,90 @@ p.announcementContent {
 
 #sortArticle button {
     color: var(--Text-Color);
+}
+
+#articles {
+    margin-top: 5px;
+}
+
+div.perArticle {
+    height: 116px;
+    margin-bottom: 16px;
+    padding-inline: 10px;
+    padding-block: 3px;
+    border-radius: 5px;
+    background: var(--Secondary-Color);
+}
+
+div.perArticle p {
+    margin: 0;
+    color: var(--Text-Color);
+}
+
+p.basicInfo {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+p.basicInfo span {
+    font-size: 0.7rem;
+}
+
+span.infoSeparate {
+    margin-inline: 2px;
+}
+
+span.timeInfo {
+    margin-inline: 5px;
+}
+
+p.basicInfo button {
+    color: var(--Text-Color);
+}
+
+div.menu {
+    position: absolute;
+    margin-left: 810px;
+    background: var(--Primary-Color);
+    display: none;
+    flex-direction: column;
+}
+
+div.menu a {
+    font-size: 0.8rem;
+    padding-inline: 20px;
+    padding-block: 2px;
+    color: var(--Text-Color);
+}
+
+div.menu a:hover {
+    color: var(--Section-Text-Color);
+}
+
+p.articleTitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+p.articleTitle:hover {
+    color: var(--Section-Text-Color);
+}
+
+p.articleContent {
+    font-size: 0.75rem;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.articleInfo {
+    text-align: right;
+    padding-top: 5px;
+    font-size: 0.7rem;
 }
