@@ -83,6 +83,13 @@
     border-radius: 5px;
 }
 
+p.subTitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 20px;
+}
+
 #announcementsContainer {
     display: flex;
     flex-direction: row;
@@ -92,13 +99,6 @@
     width: 30px;
     font-size: larger;
     color: var(--Text-Color);
-}
-
-#sectionAnnouncementTitle {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 0;
-    margin-top: 20px;
 }
 
 #announcements {
@@ -135,6 +135,63 @@ p.announcementContent {
     font-weight: 300;
     line-height: 1.2rem;
     margin: 0;
+}
+
+#subTitleBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#subTitleBar p.subTitle {
+    margin: 0;
+    line-height: 57px;
+    padding: 0;
+}
+
+#searchSections {
+    width: 200px;
+    height: 26px;
+    background: var(--Contrast-Color);
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#searchSections input {
+    width: 136px;
+    height: 20px;
+    border: none;
+    margin-left: 1px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: var(--Contrast-Color);
+    font-family: "Tinos", "Noto Serif TC", serif;
+    background: var(--Input-Background);
+}
+
+#searchSections button {
+    width: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--Button-Text-Color);
+    font-family: "Noto Serif TC", serif;
+}
+
+div.class {
+    display: flex;
+    align-items: center;
+}
+
+div.class p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+div.class button {
+    padding-inline: 10px;
+    color: var(--Text-Color);
 }
 
 #sortArticle {
