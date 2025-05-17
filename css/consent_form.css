@@ -44,5 +44,6 @@
     font-size: 1rem;
     color: var(--Button-Text-Color);
     background: var(--Contrast-Color);
-    cursor: pointer;
+    opacity: 0.7;
+    cursor: default;
 }

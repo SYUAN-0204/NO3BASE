@@ -7,7 +7,7 @@
     <link id="themeStyleSheet" rel="stylesheet" href="">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/consent_form.css">
-    <script src="js/scroll_control.js"></script>
+    <script src="js/agree_consent_form.js"></script>
     <script src="js/load_tool_bar.js" defer></script>
     <script src="js/theme_toggle.js" defer></script>
     <title>歡迎進入 No 3 BASE</title>
@@ -50,11 +50,11 @@
                 <br>識別碼：{{ user.username }}
                 <br>授權確認：
                 <label id="agreebox">
-                    <input type="checkbox">我已閱讀並同意
+                    <input id="agreeCheckbox" type="checkbox">我已閱讀並同意
                 </label>
                 <br>
                 <div id="agree">
-                    <button type="submit">送出同意書</button>
+                    <button id="submitBtn" type="submit">送出同意書</button>
                 </div>
             </div>
         </div>
