@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/player_center.css">
     <script src="js/load_tool_bar.js" defer></script>
     <script src="js/theme_toggle.js" defer></script>
-    <title>No 3 BASE</title>
+    <script src="js/share_board.js"></script>
+    <title>No 3 BASE——用戶中心</title>
 </head>
 
 <body>
@@ -31,6 +32,8 @@
                         <div class="line"></div>
                         <a href="">基本資料</a>
                         <div class="line"></div>
+                        <a href="">每日任務</a>
+                        <div class="line"></div>
                         <a href="">我的文章</a>
                         <div class="line"></div>
                         <a href="">我的收藏</a>
@@ -40,7 +43,73 @@
                     </div>
                 </div>
             </div>
-            <div id="playerContent"></div>
+            <div id="playerContent">
+                <div class="innerContent">
+                    <!-- 基本資料 -->
+                    <div class="contentTitle">
+                        <p class="detailTitle">基本資料</p>
+                        <button class="editBtn">編輯</button>
+                    </div>
+                    <img id="profilePhoto" src="assets/images/photo_r2.png" alt="">
+                    <p class="contentDetail">暱稱　論壇用戶未知名稱</p>
+                    <p class="contentDetail">帳號　sdfsdfs</p>
+                    <p class="contentDetail">信箱　abv@gmail.com（隱藏）</p>
+                    <p class="contentDetail">生日　2025-05-31</p>
+                    <p class="contentDetail">註冊日期　2025-06-11</p>
+                    <p class="contentDetail">個性簽名</p>
+                    <p class="contentDetail">
+                        山高路遠ABCDE
+                        <br>
+                        山高路遠ABCDE
+                    </p>
+                    <div class="contentTitle">
+                        <p class="detailTitle">遊戲資料</p>
+                        <div>
+                            <button id="shareBtn" class="editBtn">分享</button>
+                            <div id="shareBoard">
+                                <p class="shareTitle">分享遊戲資料卡</p>
+                                <div id="shareLinks">
+                                    <a class="community" href="">
+                                        <img class="communityImg" src="assets/images/Facebook.png" alt="">
+                                    </a>
+                                    <a class="community" href="">
+                                        <img class="communityImg" src="assets/images/X.png" alt="">
+                                    </a>
+                                    <a class="copyLink" href="">COPY</a>
+                                </div>
+                            </div>
+                            <button class="editBtn">編輯</button>
+                        </div>
+                    </div>
+                    <p class="contentDetail">尚未建立任何遊戲記錄</p>
+                    <!--<table>
+                        <tr>
+                            <td>
+                                <p class="contentDetail">遊戲</p>
+                            </td>
+                            <td>
+                                <p class="contentDetail">UID</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="gameDetail">遊戲</p>
+                            </td>
+                            <td>
+                                <p class="gameDetail">UID</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="gameDetail">遊戲</p>
+                            </td>
+                            <td>
+                                <p class="gameDetail">UID</p>
+                            </td>
+                        </tr>
+                    </table>-->
+                </div>
+            </div>
         </div>
     </div>
 </body>

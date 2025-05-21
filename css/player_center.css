@@ -97,7 +97,108 @@ div.line {
 
 #playerContent {
     width: 650px;
-    height: 100vh;
     background: var(--Secondary-Color);
     border-radius: 5px;
+}
+
+div.innerContent {
+    margin-inline: 16px;
+}
+
+div.contentTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 16px;
+}
+
+p.detailTitle {
+    font-size: 1rem;
+    margin: 0;
+}
+
+button.editBtn {
+    font-size: 0.75rem;
+    margin-left: 10px;
+    padding-inline: 16px;
+    border-radius: 3px;
+    color: var(--Button-Text-Color);
+    background: var(--Contrast-Color);
+    cursor: pointer;
+}
+
+p.shareTitle {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+#profilePhoto {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+p.contentDetail {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-block: 3px;
+}
+
+#shareBtn {
+    position: relative;
+}
+
+#shareBoard {
+    display: none;
+    position: absolute;
+    margin-left: -150px;
+    padding: 10px;
+    width: 200px;
+    height: 60px;
+    border-radius: 7px;
+    background: var(--Primary-Color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#shareLinks {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+a.community {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+img.communityImg {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+a.copyLink {
+    height: 24px;
+    line-height: 24px;
+    padding-inline: 3px;
+    color: var(--Button-Text-Color);
+    background: var(--Contrast-Color);
+    border-radius: 5px;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+td {
+    min-width: 160px;
+}
+
+p.gameDetail {
+    font-size: 0.9rem;
+    margin: 0;
 }
