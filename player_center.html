@@ -7,9 +7,15 @@
     <link id="themeStyleSheet" rel="stylesheet" href="">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/player_center.css">
+    <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet">
     <script src="js/load_tool_bar.js" defer></script>
     <script src="js/theme_toggle.js" defer></script>
     <script src="js/share_board.js"></script>
+    <script src="js/upload_player_photo.js"></script>
+    <script src="js/section_btnmenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+    <script src="js/game_detail.js"></script>
+    <script src="js/upload_game_detail.js"></script>
     <title>No 3 BASE——用戶中心</title>
 </head>
 
@@ -36,6 +42,8 @@
                         <div class="line"></div>
                         <a href="">我的文章</a>
                         <div class="line"></div>
+                        <a href="">我的草稿</a>
+                        <div class="line"></div>
                         <a href="">我的收藏</a>
                         <div class="line"></div>
                         <a href="">粉絲關注</a>
@@ -45,8 +53,230 @@
             </div>
             <div id="playerContent">
                 <div class="innerContent">
-                    <!-- 基本資料 -->
+                    <!-- 新建遊戲 -->
                     <div class="contentTitle">
+                        <p class="detailTitle">編輯遊戲</p>
+                        <button class="editBtn">儲存</button>
+                    </div>
+                    <div id="selectFields">
+                        <div class="field-container">
+                            <div class="editField">
+                                <select class="select-input" name="board[]">
+                                    <option value="" selected disabled hidden>請選擇板塊或輸入名稱</option>
+                                    <option value="rpg">RPG 遊戲</option>
+                                    <option value="action">動作遊戲</option>
+                                    <option value="puzzle">解謎遊戲</option>
+                                    <option value="horror">恐怖遊戲</option>
+                                </select>
+                                <input name="uid[]" class="gameUID" type="text" placeholder="請輸入遊戲UID">
+                            </div>
+                            <button class="removeBtn">✕</button>
+                        </div>
+                    </div>
+                    <button id="addBtn" class="editBtn">新增</button>
+                    <button id="saveBtnDown" class="editBtn">儲存</button>
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">我的粉絲</p>
+                        <a class="editA">我的關注</a>
+                    </div>
+                    <div class="follow">
+                        <a class="f" href="">
+                            <img class="fPhoto" src="assets/images/photo_r2.png" alt="">
+                            <p class="fName">
+                                用戶名稱<span class="level">Lv. 5</span>
+                                <br>
+                                <span class="enterDays">進入基地 18 天</span>
+                            </p>
+                        </a>
+                        <button class="unfollow">關注</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="follow">
+                        <a class="f" href="">
+                            <img class="fPhoto" src="assets/images/photo_r2.png" alt="">
+                            <p class="fName">
+                                用戶名稱<span class="level">Lv. 5</span>
+                                <br>
+                                <span class="enterDays">進入基地 18 天</span>
+                            </p>
+                        </a>
+                        <button class="isfollow">已關注</button>
+                    </div>
+                    <div class="line"></div>-->
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">我的關注</p>
+                        <a class="editA">我的粉絲</a>
+                    </div>
+                    <div class="follow">
+                        <a class="f" href="">
+                            <img class="fPhoto" src="assets/images/photo_r2.png" alt="">
+                            <p class="fName">
+                                用戶名稱<span class="level">Lv. 5</span>
+                                <br>
+                                <span class="enterDays">進入基地 18 天</span>
+                            </p>
+                        </a>
+                        <button class="unfollow">關注</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="follow">
+                        <a class="f" href="">
+                            <img class="fPhoto" src="assets/images/photo_r2.png" alt="">
+                            <p class="fName">
+                                用戶名稱<span class="level">Lv. 5</span>
+                                <br>
+                                <span class="enterDays">進入基地 18 天</span>
+                            </p>
+                        </a>
+                        <button class="isfollow">已關注</button>
+                    </div>
+                    <div class="line"></div>-->
+                    <!-- 我的收藏 -->
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">我的文章</p>
+                        <button id="sortArticle" type="button">≡按時間</button>
+                    </div>
+                    <div class="perArticle">
+                        <p class="basicInfo">
+                            發布者
+                            <span>
+                                <span class="sectionInfo">發布板塊</span>
+                                <span class="infoSeparate">·</span>
+                                <span class="classInfo">發布類別</span>
+                                <span class="timeInfo">發布時間：2025-05-19 21:32</span>
+                                <button class="menuBtn" type="button" onclick="toggleMenu('menu1')">⋮</button>
+                                <div id="menu1" class="menu">
+                                    <a>編輯</a>
+                                    <a>刪除</a>
+                                </div>
+                            </span>
+                        </p>
+                        <a href="index.html">
+                            <p class="articleTitle">這是文章標題</p>
+                            <p class="articleContent">這是內容<br>這是內容<br>這是內容<br>Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Illo, corrupti quae cumque et unde quod ratione quas amet reiciendis doloremque
+                                laudantium
+                                a incidunt, eveniet eum voluptatem, natus culpa dignissimos pariatur.</p>
+                        </a>
+                        <p class="articleInfo">獲讚　63　｜　留言　758　｜　熱度　263</p>
+                    </div>-->
+                    <!-- 我的文章 -->
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">我的文章</p>
+                        <button id="sortArticle" type="button">≡按時間</button>
+                    </div>
+                    <div class="perArticle">
+                        <p class="basicInfo">
+                            發布者
+                            <span>
+                                <span class="sectionInfo">發布板塊</span>
+                                <span class="infoSeparate">·</span>
+                                <span class="classInfo">發布類別</span>
+                                <span class="timeInfo">發布時間：2025-05-19 21:32</span>
+                                <button class="menuBtn" type="button" onclick="toggleMenu('menu1')">⋮</button>
+                                <div id="menu1" class="menu">
+                                    <a>編輯</a>
+                                    <a>刪除</a>
+                                </div>
+                            </span>
+                        </p>
+                        <a href="index.html">
+                            <p class="articleTitle">這是文章標題</p>
+                            <p class="articleContent">這是內容<br>這是內容<br>這是內容<br>Lorem ipsum, dolor sit amet consectetur
+                                adipisicing
+                                elit. Illo, corrupti quae cumque et unde quod ratione quas amet reiciendis doloremque
+                                laudantium
+                                a incidunt, eveniet eum voluptatem, natus culpa dignissimos pariatur.</p>
+                        </a>
+                        <p class="articleInfo">獲讚　63　｜　留言　758　｜　熱度　263</p>
+                    </div>-->
+                    <!-- 每日任務 -->
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">每日任務</p>
+                    </div>
+                    <div id="taskExp">
+                        <p>Lv 5</p>
+                        <div id="taskExpDetail">
+                            <p>1523/84569</p>
+                            <div id="taskExpBar">
+                                <div></div>
+                                <div style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task">
+                        <p class="taskcontentDetail">通訊檢測<span class="reward">5 point</span><span
+                                class="describe">每日首次登入基地</span></p>
+                        <a class="taskLink" href="">前往任務點</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="task">
+                        <p class="taskcontentDetail">系統偵測<span class="reward">10 point</span><span
+                                class="describe">按讚任一文章</span></p>
+                        <a class="finishTaskLink" href="#">已完成任務</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="task">
+                        <p class="taskcontentDetail">訊號回傳<span class="reward">15 point</span><span
+                                class="describe">回覆一則文章</span></p>
+                        <a class="taskLink" href="">前往任務點</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="task">
+                        <p class="taskcontentDetail">記錄上傳<span class="reward">15 point</span><span
+                                class="describe">建立一篇草稿</span></p>
+                        <a class="taskLink" href="">前往任務點</a>
+                    </div>
+                    <div class="line"></div>
+                    <div class="task">
+                        <p class="taskcontentDetail">資料同步<span class="reward">25 point</span><span
+                                class="describe">發布一篇文章</span></p>
+                        <a class="taskLink" href="">前往任務點</a>
+                    </div>
+                    <div class="line"></div>-->
+                    <!-- 編輯資料 -->
+                    <!--<div class="contentTitle">
+                        <p class="detailTitle">編輯資料</p>
+                        <button class="editBtn">儲存</button>
+                    </div>
+                    <div id="uploadPhoto">
+                        <img id="profilePhoto" src="assets/images/photo_r2.png" alt="">
+                        <div class="overlay">
+                            <label id="uploadBtn" for="fileInput">上傳圖片</label>
+                            <input type="file" id="fileInput" accept="image/*" hidden>
+                        </div>
+                    </div>
+                    <p class="contentDetail">
+                        暱稱
+                        <label for="">
+                            <input class="editProfile" type="text">
+                        </label>
+                    </p>
+                    <p class="contentDetail">帳號　cdsvdsfvg</p>
+                    <p class="contentDetail">
+                        信箱
+                        <select class="privateProfile" name="" id="emailSelect">
+                            <option value="">公開</option>
+                            <option value="">僅限粉絲</option>
+                            <option value="">私人</option>
+                        </select>
+                        abv@gmail.com
+                    </p>
+                    <p class="contentDetail">
+                        生日
+                        <select class="privateProfile" name="" id="emailSelect">
+                            <option value="">公開</option>
+                            <option value="">僅限粉絲</option>
+                            <option value="">私人</option>
+                        </select>
+                        2025-05-31
+                    </p>
+                    <p class="contentDetail">註冊日期　2025-06-11</p>
+                    <p class="contentDetail">個性簽名（15 / 100）</p>
+                    <textarea name="" id=""></textarea>-->
+                    <!-- 基本資料 -->
+                    <!--<div class="contentTitle">
                         <p class="detailTitle">基本資料</p>
                         <button class="editBtn">編輯</button>
                     </div>
@@ -75,13 +305,13 @@
                                     <a class="community" href="">
                                         <img class="communityImg" src="assets/images/X.png" alt="">
                                     </a>
-                                    <a class="copyLink" href="">COPY</a>
+                                    <a class="copyLink" href="">copy</a>
                                 </div>
                             </div>
                             <button class="editBtn">編輯</button>
                         </div>
                     </div>
-                    <p class="contentDetail">尚未建立任何遊戲記錄</p>
+                    <p class="contentDetail">尚未建立任何遊戲記錄</p>-->
                     <!--<table>
                         <tr>
                             <td>
