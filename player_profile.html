@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="themeStyleSheet" rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/player_profile.css">
+    <script src="js/load_tool_bar.js" defer></script>
+    <script src="js/theme_toggle.js" defer></script>
+    <script src="js/section_btnmenu.js"></script>
+    <title>No 3 BASE—玩家名稱八個字符</title>
+</head>
+
+<body>
+    <div id="toolBar"></div>
+    <div id="sectionImg">
+        <img src="assets/images/photo_r.jpg" alt="sectionBackground">
+    </div>
+    <div id="content">
+        <div id="sectionTitle">
+            <img src="assets/images/photo_r.jpg" alt="sectionIcon">
+            <div id="sectionTitleDetail">
+                <p>用戶名稱八個字符<span class="level">Lv. 5</span></p>
+                <p>累積文章　20263　｜　累積留言　758　｜　累積獲讚　63</p>
+                <div>
+                    <p id="playerWord">
+                        一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十
+                        <br>
+                        山高路遠ABCDE
+                    </p>
+                    <a>訊息</a>
+                    <button type="button">關注</button>
+                </div>
+            </div>
+        </div>
+        <div id="subTitleBar">
+            <div class="switch">
+                <a class="active">文章</a>
+                <a>留言</a>
+                <a>按讚</a>
+            </div>
+            <div id="sortArticle">
+                <button type="button">≡按時間</button>
+            </div>
+        </div>
+        <div id="articles">
+            <div class="perArticle">
+                <p class="basicInfo">
+                    發布者
+                    <span>
+                        <span class="sectionInfo">發布板塊</span>
+                        <span class="infoSeparate">·</span>
+                        <span class="classInfo">發布類別</span>
+                        <span class="timeInfo">發布時間：2025-05-19 21:32</span>
+                        <button class="menuBtn" type="button" onclick="toggleMenu('menu1')">⋮</button>
+                        <div id="menu1" class="menu">
+                            <a>編輯</a>
+                            <a>檢舉</a>
+                        </div>
+                    </span>
+                </p>
+                <a href="index.html">
+                    <p class="articleTitle">這是文章標題</p>
+                    <p class="articleContent">這是內容<br>這是內容<br>這是內容<br>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Illo, corrupti quae cumque et unde quod ratione quas amet reiciendis doloremque laudantium
+                        a incidunt, eveniet eum voluptatem, natus culpa dignissimos pariatur.</p>
+                </a>
+                <p class="articleInfo">獲讚　63　｜　留言　758　｜　熱度　263</p>
+            </div>
+            <!--
+            <div class="perArticle">
+                <p class="basicInfo">
+                    發布者
+                    <span>
+                        <span class="sectionInfo">發布板塊</span>
+                        <span class="infoSeparate">·</span>
+                        <span class="classInfo">發布類別</span>
+                        <span class="timeInfo">發布時間：2025-05-19 21:32</span>
+                        <button class="menuBtn" type="button" onclick="toggleMenu('menu1')">⋮</button>
+                        <div id="menu1" class="menu">
+                            <a>編輯</a>
+                            <a>檢舉</a>
+                        </div>
+                    </span>
+                </p>
+                <a href="index.html">
+                    <p class="articleTitle">這是文章標題</p>
+                    <p class="articleContent">這是內容<br>這是內容<br>這是內容<br>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing
+                        elit. Illo, corrupti quae cumque et unde quod ratione quas amet reiciendis doloremque laudantium
+                        a incidunt, eveniet eum voluptatem, natus culpa dignissimos pariatur.</p>
+                </a>
+                <p class="articleInfo">獲讚　63　｜　留言　758　｜　熱度　263</p>
+            </div>
+            -->
+        </div>
+    </div>
+</body>
+
+</html>

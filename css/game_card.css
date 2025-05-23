@@ -34,6 +34,7 @@
 }
 
 a.player {
+    font-weight: 700;
     color: var(--Text-Color);
 }
 
@@ -46,8 +47,9 @@ a.player:hover {
     font-family: "Bubblegum Sans", "Noto Serif TC", sans-serif;
 }
 
-#gameDetail {
-    margin-top: 10px;
+div.line {
+    background: var(--Text-Color);
+    margin-block: 10px;
 }
 
 img.gameIcon {
