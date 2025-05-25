@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="themeStyleSheet" rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/edit_article.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css">
+    <link rel="stylesheet" href="https://cdn.quilljs.com/1.3.6/quill.snow.css">
+    <script src="js/load_tool_bar.js" defer></script>
+    <script src="js/theme_toggle.js" defer></script>
+    <script src="js/quill_textarea.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select/dist/js/tom-select.complete.min.js"></script>
+    <script src="js/select_section.js"></script>
+    <script src="js/textarea_space.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="js/upload_article.js"></script>
+    <title>No 3 BASE—編輯文章</title>
+</head>
+
+<body>
+    <div id="toolBar"></div>
+    <div id="content">
+        <p class="subTitle">編輯文章</p>
+        <div id="editArticle">
+            <p class="itemTitle">板塊類別</p>
+            <div class="inputFields">
+                <div class="field-container">
+                    <select id="selectSection" class="select-input selectSection" name="board">
+                        <option value="" selected disabled hidden>選擇板塊</option>
+                        <option value="rpg">RPG 遊戲</option>
+                        <option value="action">動作遊戲</option>
+                        <option value="puzzle">解謎遊戲</option>
+                        <option value="horror">恐怖遊戲</option>
+                    </select>
+                </div>
+                <div class="field-container">
+                    <select id="selectClass" class="select-input selectClass" name="board">
+                        <option value="" selected disabled hidden>選擇類別</option>
+                        <option value="rpg">RPG 遊戲</option>
+                        <option value="action">動作遊戲</option>
+                        <option value="puzzle">解謎遊戲</option>
+                        <option value="horror">恐怖遊戲</option>
+                    </select>
+                </div>
+            </div>
+            <p class="itemTitle">文章標題</p>
+            <div class="inputFields inputCenter">
+                <textarea id="articleTitle"></textarea>
+            </div>
+            <p class="itemTitle">文章內容</p>
+            <div class="inputFields inputCenter">
+                <form method="post" action="">
+                    <div id="editor-container"></div>
+
+                    <input type="hidden" name="content" id="hidden-content">
+                    <div id="editBtn">
+                        <button class="submitArticle" type="submit">儲存草稿</button>
+                        <button id="publishBtn" class="submitArticle" type="submit">發布文章</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
