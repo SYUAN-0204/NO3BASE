@@ -60,7 +60,7 @@ span.level {
     font-weight: 300;
     color: var(--Level-Text-Color);
     font-family: "Bubblegum Sans", sans-serif;
-    background: var(--Level-Background);
+    background: var(--Contrast-Color);
     margin-inline: 5px;
     padding-inline: 5px;
     border-radius: 10px;

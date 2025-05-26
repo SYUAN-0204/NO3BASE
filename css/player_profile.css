@@ -59,7 +59,7 @@ span.level {
     font-weight: 300;
     color: var(--Level-Text-Color);
     font-family: "Bubblegum Sans", sans-serif;
-    background: var(--Level-Background);
+    background: var(--Contrast-Color);
     margin-inline: 10px;
     padding-inline: 10px;
     border-radius: 10px;
@@ -300,4 +300,75 @@ p.articleInfo {
     text-align: right;
     padding-top: 5px;
     font-size: 0.7rem;
+}
+
+div.follow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+a.f {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+img.fPhoto {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+p.fName {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--Text-Color);
+}
+
+a.f:hover p {
+    color: var(--Section-Text-Color);
+}
+
+span.level {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--Level-Text-Color);
+    font-family: "Bubblegum Sans", sans-serif;
+    background: var(--Contrast-Color);
+    margin-inline: 5px;
+    padding-inline: 5px;
+    border-radius: 10px;
+    letter-spacing: 0;
+}
+
+span.enterDays {
+    font-size: 0.65rem;
+    font-family: "Bubblegum Sans", "Noto Serif TC", sans-serif;
+}
+
+a.f:hover span.enterDays {
+    color: var(--Text-Color);
+}
+
+button.unfollow {
+    height: 18px;
+    width: 60px;
+    font-size: 0.65rem;
+    color: var(--Button-Text-Color);
+    background: var(--Contrast-Color);
+    border-radius: 3px;
+}
+
+button.isfollow {
+    height: 18px;
+    width: 60px;
+    font-size: 0.65rem;
+    color: var(--Text-Color);
+    border: 1px solid var(--Contrast-Color);
+    border-radius: 3px;
 }
