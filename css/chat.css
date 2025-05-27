@@ -93,9 +93,16 @@ div.line {
     background: var(--Primary-Color);
 }
 
+p.chatDate {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
 div.chatContentLeftBox {
     display: flex;
     justify-content: left;
+    align-items: end;
+    margin-right: 300px;
 }
 
 p.chatContentLeft {
@@ -112,9 +119,18 @@ p.chatContentLeft {
     margin-block: 5px;
 }
 
+p.chatTime {
+    font-size: 0.6rem;
+    margin: 0;
+    margin-inline: 5px;
+    margin-bottom: 7px;
+}
+
 div.chatContentRightBox {
     display: flex;
     justify-content: right;
+    align-items: end;
+    margin-left: 300px;
 }
 
 
